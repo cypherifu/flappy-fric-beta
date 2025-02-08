@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/fricprofile.png">
+    <title>Flappy Fric</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="header">
+            <img src="images/fricprofile.png" alt="Fric Profile">
+            <a href="index.html">
+                <h1>Flappy Fric</h1>
+            </a>
+            <h2>
+                <a href="https://x.com/cypherifu" 
+                   style="text-decoration: none; color: inherit;" 
+                   onmouseover="this.style.color='blue'" 
+                   onmouseout="this.style.color='';" 
+                   target="_blank">
+                   by Rifu
+                </a>
+            </h2>
+        </div>
+        <div class="player-input">
+            <input type="text" id="playerName" placeholder="Enter your friccin name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+
+        <div class="score-container">
+            <span>Score: <span id="score">0</span></span>
+            <span>$Fric: <span id="coins">0</span></span>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="gameOverScreen" class="game-over">
+            <img src="images/gameover.png" alt="Game Over" class="game-over-img">
+            <p>Not enough conFRICtion!</p>
+            <p>Press space now!</p>
+            <p id="finalScore">Score: 0</p>
+            <p id="finalFric">$Fric: 0</p>
+            <p id="totalScore">Total Score: 0</p>
+        </div>
+    </div>
+
+    <div id="leaderboardSection">
+        <h1>Best Friccers</h1>
+        <ul id="leaderboardList">
+            <!-- Placeholder for leaderboard data -->
+        </ul>
+    </div>
+    
+    
+
+    <script src="leaderboard.js"></script>
+
+    <!--<section id="leaderboardSection" style="display: none;">
+        <h2>Leaderboard Top 10</h2>
+        <ul id="leaderboardList"></ul>
+    </section>-->
+
+    <!-- Button to toggle leaderboard visibility
+    <button id="viewLeaderboardBtn" onclick="toggleLeaderboard()">View Leaderboard</button>-->
+
+    <script type="module" src="firebaseConfig.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="leaderboard.js"></script>
+    <script type="module">
+        import { db } from "./firebaseConfig.js";
+        console.log("✅ Firebase imported successfully!", db);
+      </script>
+      
+    
+</body>
+
+</html>
