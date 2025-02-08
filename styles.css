@@ -1,0 +1,162 @@
+.header img {
+    width: 40px;
+    height: 40px;
+}
+
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.game-container {
+    width: 90vw;
+    max-width: 800px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 10px;
+}
+
+.title-bar {
+    width: 80%;
+    height: 4px;
+    background-color: #333;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+canvas {
+    display: none;
+    border: 2px solid #333;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    display: none;
+}
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 80%;
+    max-width: 300px;
+}
+
+.game-over img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.player-input {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 14px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #4d614b;
+}
+
+#leaderboardSection {
+    overflow-y: auto; 
+    margin-top: 5px; 
+    background-color: rgba(255, 255, 255, 0.8);  
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;  
+    margin-bottom: 20px; 
+}
+
+li {
+    background-color: #cecece; 
+    padding: 5px;
+}
+
+li.rank-1 {
+    background-color: rgb(94, 255, 0); /* 1st place*/
+}
+
+li.rank-2 {
+    background-color: rgb(220, 224, 162); /* 2nd place*/
+}
+
+li.rank-3 {
+    background-color: #cd7f32; /* 3rd place*/
+}
+
+
+
+#leaderboardList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leaderboardList li {
+    font-size: 15px;
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none; 
+    color: black; 
+}
+
+a:hover {
+    color: green;
+}
