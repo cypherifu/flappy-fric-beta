@@ -1,4 +1,4 @@
-import { db } from "./firebaseConfig.js"; // ✅ Import Firestore instance
+import { db } from "./firebaseconfig.js"; // ✅ Import Firestore instance
 import { collection, addDoc, getDocs, query, orderBy, limit, doc, updateDoc, setDoc, writeBatch, serverTimestamp } 
     from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
 
