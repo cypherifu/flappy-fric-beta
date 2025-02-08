@@ -1,4 +1,4 @@
-import { db } from "./firebaseConfig.js"; // ✅ Import Firestore instance
+import { db } from "./firebaseconfig.js"; // ✅ Import Firestore instance
 import { collection, getDocs, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/11.3.0/firebase-firestore.js";
 
 console.log("✅ leaderboard.js loaded successfully!");
